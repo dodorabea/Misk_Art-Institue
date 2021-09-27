@@ -1,0 +1,391 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Email Confirmation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <style type="text/css">
+            
+                body {
+                    color: #434756;
+                    text-align: right;
+                   
+                    font-family: 'Proxima Nova','Open Sans',Corbel,Arial,sans-serif;
+                    margin: 0;
+                }
+
+                .content {
+                    max-width: 1000px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: left;
+                    direction: ltr;
+                }
+		.left 
+		{
+			text-align: right ;
+		}
+
+                .header {
+                    display: -webkit-box;
+                    background: #fcfcfc;
+                    padding: 10px
+                }
+
+                    .header .left, .header .right {
+                        width: 50%;
+                    }
+
+                    .header h2 {
+                        font-weight: 400;
+                    }
+
+                    .header h2, .header h5 {
+                        color: #333;
+                        letter-spacing: -0.4px;
+                        margin-top: 11px;
+                        margin-bottom: 11px;
+                        font-size: 32px;
+                        line-height: 35.52px;
+                    }
+
+                    .header .line {
+                        width: 43px;
+                        height: 6px;
+                        font-size: 4px;
+                        display: inline-block;
+                        background-color: #feee00;
+                    }
+
+             
+               
+
+                  
+
+                .footer {
+                    background: #fcfcfc;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+
+                    .footer .box {
+                        display: inline-block;
+                        padding: 10px;
+                    }
+
+                        .footer .box span {
+                            display: inline-block;
+                            font-size: 13px;
+                            color: #7e859b
+                        }
+
+                        .footer .box img {
+                            width: 20px;
+                        }
+
+                    .footer .box2 {
+                        width: 50%;
+                        text-align: left;
+                        display: inline-block;
+                        text-align: center;
+                    }
+
+                        .footer .box2 a {
+                            width: 30px;
+                            display: inline-block;
+                        }
+
+                    .footer .box3 {
+                        color: #7e859b;
+                        padding: 10px;
+                        width: 47%;
+                        text-align: left;
+                        display: inline-block;
+                        text-align: center;
+                    }
+
+                        .footer .box3 div a {
+                            display: inline-block;
+                            color: #7e859b;
+                            margin: 10px;
+                            font-size: 13px;
+                            margin: 5px;
+                            text-decoration: underline;
+                        }
+a
+        {
+            text-decoration: none;
+        }
+               
+		 .justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+				   .gutters > .col, .gutters > [class*="col-"] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+				   .col-xl-8 {
+   -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+					   width: 100%;
+					   display: block;
+    margin: 0 auto;
+}
+		.item .post-img {
+    width: 33.33%;
+    transition: all 0.3s ease 0s;
+    float: left;
+}
+
+.item .complete-desc {
+    width: 61.66%;
+    float: left;
+    padding-left: 20px;
+}
+		.complete_sec .title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000;
+    font-family: " LTZaridSansAL-Regular";
+}
+		.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+   
+}
+		.complete-desc h2 {
+    font-size: 12px;
+    background: #282D5F;
+    color: #fff;
+    width: max-content;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0px 13px 0;
+    font-family: " LTZaridSansAL-SemiBold";
+}
+		h3.complete-title {
+    margin: 0 !important;
+			font-size: 24px;
+			padding-bottom: 18px;
+}
+		.parcode_img img
+{
+	width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+ hr
+{
+	margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+		.col-sm-6 {
+    width: 50%;
+}
+		.Complete {
+    padding: 20px 25px;
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+			border: 1px solid #dee2e6 !important;
+			
+}
+		.title_complete {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    font-family: " LTZaridSansAL-Regular";
+}
+		.upcoming-date {
+    color: #808080;
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+
+
+		
+.col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+		.general_num {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    opacity: 0.8;
+    font-family: " LTZaridSansAL-Regular";
+}
+		.par
+		{
+			width: 50%;
+    margin: 0 auto;
+		}
+.general_num {
+    float: right;
+}
+        </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="header">
+
+            <div class="right">
+                <h5>
+                  Welcome to Misk Art Instute
+                </h5>
+            </div>
+            <div class="left">
+                <img src="images/logo.png" />
+            </div>
+        </div>
+        <div class="body-content" style="margin-top: -20px;">
+           
+              <div class="row gutters ">
+						<div  class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+							<div class="Complete pt-70">
+								<div class="container" >
+								<div class="complete_sec">
+                                <h3 class="title">Tickets</h3>
+							<div class="row" >
+                                <div class="item">
+	                                <div class="post-img">
+	                                    <a href="#"><img style="    width: 158px; height: 108px;" class="img_complete" src="images/complete/complete.png" alt=""></a>
+	                                </div>
+	                                <div class="complete-desc">
+	                                     <h2>EXHIBITION</h2>
+	                                    <h3 class="complete-title"><a href="#">National Day Celebrations</a></h3>
+	                                   <div class="upcoming-date">
+                                         <i class="fa fa-calendar-alt" style="padding-right: 5px;"></i>
+                                            <span>Feb 13. 2021
+                                            </span>
+                                            <br>
+                                          <i class="fa fa-map-marker" style="padding-right: 5px;"></i>
+                                            <span style="padding-top: 5px;">Al Balad, Jeddah 12.30 Entry</span>
+                                        </div>
+	                                </div>
+								</div>
+	                            </div><!-- .post-item end -->
+	                         <hr>
+                           
+					</div>
+						<div class="row">
+						<div class="par">
+							<div class="parcode_img">
+							<img src="http://15.184.186.129/images/parcode.png">
+							</div>
+							</div>
+						</div>
+							<hr>
+					<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6">
+									<span class="title_complete"> Order Number </span>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<span class="general_num">#1458704</span>
+								</div>
+							</div>
+						
+						<hr>
+						<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<span class="title_complete"> adults </span>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<span class="general_num">2</span>
+								</div>
+						</div>
+						<hr>
+						<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<span class="title_complete"> Child </span>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<span class="general_num">2</span>
+								</div>
+						</div>
+						
+								</div>
+							</div>
+								
+
+						</div>
+					</div>
+           
+           
+            <div class="footer">
+
+                <div class="box">
+                    <img src="https://ci6.googleusercontent.com/proxy/GjXO3Jk5u7BxBwHeWMQxZR_C_EzA6-zQFO7t8zkPmvhqal6NB8JeDQbX9cbLuNewH4J0lDc1JSpsaU6MpJ8TBDc=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/message_sl.png" width="16" class="CToWUd">
+                    <span>
+                      do7a.rab3@gmail.com                      <br>
+
+                        <a href="#">
+                        do7a.rab3@gmail.com
+                        </a>
+                    </span>
+                </div>
+                <div class="box">
+                    <img src="https://ci5.googleusercontent.com/proxy/oBp7heSxP5q209w0MAgAn0GWuS6isLh7AG3fq2C6mS8hbCVpITr0Yrl_OQ9tbGPGfQDCtFD4ssx1P4PhhXcx=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/Phone_sl.png" width="16" class="CToWUd">
+                    <span>
+                        1112223334
+                        <br>
+
+                        <a href="#">
+
+                           345678904
+                        </a>
+                    </span>
+                </div>
+                <div class="box2">
+                    <a href="#" target="_blank">
+                        <img src="https://ci6.googleusercontent.com/proxy/rwLp8MHab_sQyyuuEx5GvFfaAlYwKDXgtW0zir0B9oMrXr_xu-Vatju5eY_tHVlzUNLZ6CCd6TWGs2w=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/fb_s.png" width="6" style="margin:0 auto" class="CToWUd">
+
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://ci4.googleusercontent.com/proxy/oXFb-mYOwU11Lly9T_Qc-aJWNNvelIwRcs1uvS4Jzz1mpRH94pMibyTA_qn9TzlOdAfXgOOBrGYF_XH_fuQR-vU=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/twitter_sl.png" width="13" style="margin:0 auto" class="CToWUd">
+
+                    </a>  <a href="#" target="_blank">
+                        <img src="https://ci6.googleusercontent.com/proxy/a_J4Hg-V0lI2-O3XLIbPmQBR6pfN1ifYAEmYOiM8u9YAg4jOUs0UUYepOxYioec-F4HeuRe5sdd7MMMyKVr3=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/insta_sl.png" width="13" style="margin:0 auto" class="CToWUd">
+
+                    </a>  <a href="#" target="_blank">
+                        <img src="https://ci5.googleusercontent.com/proxy/Ymg8ViNxbQgAVLS-h0tUTVadMNB7IjpRUoSOfOedkaqvWBfQeHMfzkpLTUz1rCXjw0ast7t7T59BF_t8rjm6JXhy=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/Linkedin_sl.png" width="13" style="margin:0 auto" class="CToWUd">
+
+                    </a>
+
+                </div>
+                <hr>
+
+         
+                                    <br>
+
+                                 
+
+
+
+
+</div>
+            </div>
+
+        </div>
+   
+
+
+
+
+
+</body>
+</html>

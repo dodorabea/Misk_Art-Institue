@@ -1,0 +1,502 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Email Confirmation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+            
+                body {
+                    color: #434756;
+                    text-align: right;
+                    direction: rtl;
+                    font-family: 'Proxima Nova','Open Sans',Corbel,Arial,sans-serif;
+                    margin: 0;
+                }
+
+                .content {
+                    max-width: 1000px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: left;
+                    direction: ltr;
+                }
+
+                .header {
+                    display: -webkit-box;
+                    background: #fcfcfc;
+                    padding: 10px
+                }
+
+                    .header .left, .header .right {
+                        width: 50%;
+                    }
+
+                    .header h2 {
+                        font-weight: 400;
+                    }
+
+                    .header h2, .header h5 {
+                        color: #333;
+                        letter-spacing: -0.4px;
+                        margin-top: 11px;
+                        margin-bottom: 11px;
+                        font-size: 32px;
+                        line-height: 35.52px;
+                    }
+
+                    .header .line {
+                        width: 43px;
+                        height: 6px;
+                        font-size: 4px;
+                        display: inline-block;
+                        background-color: #feee00;
+                    }
+
+                .left {
+                    text-align: right;
+                }
+
+                .right {
+                    text-align: left;
+                }
+
+                .body-content p {
+                    font-size: 13px
+                }
+
+                .body-content h4 {
+                    color: #7ed321;
+                    font-size: 18px;
+                    line-height: 1.22;
+                    direction: ltr;
+                    text-align: left;
+                    line-height: 1.22;
+                    padding-top: 30px;
+                }
+
+                    .body-content h4 span {
+                        color: #7e859b;
+                    }
+
+                .boxs .left, .boxs .right {
+                    width: 100%;
+                    display: inline-table;
+                    background: #f8f9fb;
+                    padding: 5px;
+                    text-align: right;
+                }
+
+                .boxs h4 {
+                    font-size: 12px;
+                    font-weight: bold;
+                    letter-spacing: 0.2px;
+                    color: #4a4a4a;
+                    line-height: 1.5;
+                }
+
+                .boxs h6 {
+                    font-size: 13px;
+                    text-align: left;
+                }
+
+                    .boxs h6 span {
+                        width: 87px;
+                        font-size: 11px;
+                        display: inline-block;
+                    }
+
+                .boxs p {
+                    font-size: 14px;
+                    text-align: left;
+                }
+
+                .boxs a {
+                    text-decoration: none
+                }
+
+                .products {
+                    border-top: .4px solid #eee;
+                    border-bottom: .4px solid #eee;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    margin-top: 20px
+                }
+
+                    .products .product-details {
+                        width: 70%;
+                        display: inline-block;
+                    }
+
+                    .products .right {
+                        width: 20%;
+                        display: inline-block;
+                    }
+
+                .product-details h6 {
+                    color: #777;
+                    font-weight: 400;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                }
+
+                    .product-details h6 span {
+                        text-align: left;
+                        color: #333;
+                        font-size: 16px;
+                        float: right;
+                    }
+
+                .product-details h5 {
+                    margin-bottom: 20px;
+                    color: #38ae04
+                }
+
+                .product-details p {
+                    font-size: 15px;
+                }
+
+                table {
+                    font-weight: 400;
+                }
+
+                .total th {
+                    font-size: 13px;
+                    text-align: left;
+                    color: #7e859b;
+                    padding-top: 14px;
+                    padding-left: 16px;
+                    padding-bottom: 10px;
+                }
+
+                .total td {
+                    font-size: 13px;
+                    text-align: right;
+                    color: #404553;
+                    padding-top: 14px;
+                    padding-bottom: 10px;
+                }
+
+                .total h4 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: #333;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .total th h4 {
+                    text-align: left;
+                }
+
+                .total td h4 {
+                    text-align: right;
+                }
+
+                .total table {
+                    margin-left: 50%
+                }
+
+                .footer {
+                    background: #fcfcfc;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+
+                    .footer .box {
+                        display: inline-block;
+                        padding: 10px;
+                    }
+
+                        .footer .box span {
+                            display: inline-block;
+                            font-size: 13px;
+                            color: #7e859b
+                        }
+
+                        .footer .box img {
+                            width: 20px;
+                        }
+
+                    .footer .box2 {
+                        width: 50%;
+                        text-align: left;
+                        display: inline-block;
+                        text-align: center;
+                    }
+
+                        .footer .box2 a {
+                            width: 30px;
+                            display: inline-block;
+                        }
+
+                    .footer .box3 {
+                        color: #7e859b;
+                        padding: 10px;
+                        width: 47%;
+                        text-align: left;
+                        display: inline-block;
+                        text-align: center;
+                    }
+
+                        .footer .box3 div a {
+                            display: inline-block;
+                            color: #7e859b;
+                            margin: 10px;
+                            font-size: 13px;
+                            margin: 5px;
+                            text-decoration: underline;
+                        }
+
+                table {
+                    width: 50%;
+                }
+
+                a {
+                    text-decoration: none
+                }
+
+                .bord {
+                    border-top: 1px solid #e2e5f2;
+                }
+
+                .line .li {
+                    display: inline-block;
+                    height: 10px;
+                }
+
+                .green {
+                    background: #7ed321;
+                }
+
+                .gray {
+                    background: #e2e5f1;
+                }
+
+                .blue {
+                    background: #5A28FA;
+                }
+
+                .div1 {
+                    width: 10%;
+                    display: inline-block;
+                    padding-left: 17px;
+                    color: #5A28FA;
+                }
+
+                .div2 {
+                    width: 20%;
+                    display: inline-block;
+                    color: #000;
+                }
+
+                .div3 {
+                    width: 38%;
+                    display: inline-block;
+                    color: #000;
+                }
+
+                .div4 {
+                    width: 28%;
+                    display: inline-block;
+                    color: #000;
+                }
+
+               @media only screen and (max-width: 600px) {
+
+                    .boxs .left, .boxs .right {
+                        width: 100%;
+                        margin-bottom: 10px
+                    }
+
+                    .total table {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+
+                    .footer .box3 {
+                        width: 100%;
+                    }
+               
+        </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="header">
+
+            <div class="right">
+                <h5>
+                  Welcome to Misk Art Instute
+                </h5>
+            </div>
+            <div class="left">
+                <img src="images/logo.png" />
+            </div>
+        </div>
+        <div class="body-content" style="margin-top: -20px;">
+            <h4 style="color:#5A28FA;">Hi:Doha</h4>
+            <p style="font-size: large; color:black;"> About Exhibitions, consectetur adipiscing elit.</p>
+            <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</pre>
+
+            <div class="line">
+                <div class="li blue" style="width:10%;"></div>
+                <div class="li gray" style="width:20%;"></div>
+                <div class="li gray" style="width:38%;"></div>
+                <div class="li gray" style="width:28%;"></div>
+            </div>
+            <div class="line" style="font-size: 15px;">
+                <div class="div1"> new</div>
+                <div class="div2"> underpreparing</div>
+                <div class="div3">  shipping </div>
+                <div class="div4"> received  </div>
+            </div>
+            <h4 style="color:#5A28FA;">
+               Order Done &nbsp;
+
+                <span>23/04/2021 02:07:33PM</span>
+            </h4>
+            <div class="boxs">
+               
+                    <div class="left">
+
+                        <table style="text-align: left;">
+
+
+                            <tr>
+                                <th>  <span> order_number </span></th>
+                                <td>   55 </td>
+                            </tr>
+
+
+                            <tr>
+                                <th>  <span> Total  </span></th>
+                                <td>   60 </td>
+                            </tr>
+
+
+                            <tr>
+                                <th>  <span>  Payment  </span></th>
+                                <td>      Paiement when recieving</td>
+                            </tr>
+
+                             <tr>
+                                <th>  <span>  Client  </span></th>
+                                <td>      Doha</td>
+                            </tr>
+
+
+                        </table>
+
+
+
+
+
+                    </div>
+                  
+              
+            </div>
+            
+                    <div class="products">
+
+                        <div class="right">
+                            <img src="images/logo.png"/>
+
+                        </div>
+                        <div class="product-details">
+                           <span>
+                                 67 dollar</span>
+                            <p style="color:#5A28FA;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis quis lorem nec pharetra.
+                        </div>
+                    </div>
+
+          
+                    <div class="products">
+
+                        <div class="right">
+                            <img src="images/logo.png"/>
+
+                        </div>
+                        <div class="product-details">
+                           <span>
+                                 67 dollar</span>
+                            <p style="color:#5A28FA">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis quis lorem nec pharetra.
+                        </div>
+                    </div>
+
+
+
+            <div class="total">
+
+              
+                <p style="color:#5A28FA;">45555</p>
+                <h5 style="color:#5A28FA;">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h5>
+
+            </div>
+            <div class="footer">
+
+                <div class="box">
+                    <img src="https://ci6.googleusercontent.com/proxy/GjXO3Jk5u7BxBwHeWMQxZR_C_EzA6-zQFO7t8zkPmvhqal6NB8JeDQbX9cbLuNewH4J0lDc1JSpsaU6MpJ8TBDc=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/message_sl.png" width="16" class="CToWUd">
+                    <span>
+                      do7a.rab3@gmail.com                      <br>
+
+                        <a href="#">
+                        do7a.rab3@gmail.com
+                        </a>
+                    </span>
+                </div>
+                <div class="box">
+                    <img src="https://ci5.googleusercontent.com/proxy/oBp7heSxP5q209w0MAgAn0GWuS6isLh7AG3fq2C6mS8hbCVpITr0Yrl_OQ9tbGPGfQDCtFD4ssx1P4PhhXcx=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/Phone_sl.png" width="16" class="CToWUd">
+                    <span>
+                        1112223334
+                        <br>
+
+                        <a href="#">
+
+                           345678904
+                        </a>
+                    </span>
+                </div>
+                <div class="box2">
+                    <a href="#" target="_blank">
+                        <img src="https://ci6.googleusercontent.com/proxy/rwLp8MHab_sQyyuuEx5GvFfaAlYwKDXgtW0zir0B9oMrXr_xu-Vatju5eY_tHVlzUNLZ6CCd6TWGs2w=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/fb_s.png" width="6" style="margin:0 auto" class="CToWUd">
+
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://ci4.googleusercontent.com/proxy/oXFb-mYOwU11Lly9T_Qc-aJWNNvelIwRcs1uvS4Jzz1mpRH94pMibyTA_qn9TzlOdAfXgOOBrGYF_XH_fuQR-vU=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/twitter_sl.png" width="13" style="margin:0 auto" class="CToWUd">
+
+                    </a>  <a href="#" target="_blank">
+                        <img src="https://ci6.googleusercontent.com/proxy/a_J4Hg-V0lI2-O3XLIbPmQBR6pfN1ifYAEmYOiM8u9YAg4jOUs0UUYepOxYioec-F4HeuRe5sdd7MMMyKVr3=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/insta_sl.png" width="13" style="margin:0 auto" class="CToWUd">
+
+                    </a>  <a href="#" target="_blank">
+                        <img src="https://ci5.googleusercontent.com/proxy/Ymg8ViNxbQgAVLS-h0tUTVadMNB7IjpRUoSOfOedkaqvWBfQeHMfzkpLTUz1rCXjw0ast7t7T59BF_t8rjm6JXhy=s0-d-e1-ft#https://a.nooncdn.com/nr/emails/Linkedin_sl.png" width="13" style="margin:0 auto" class="CToWUd">
+
+                    </a>
+
+                </div>
+                <hr>
+
+         
+                                    <br>
+
+                                 
+
+
+
+
+</div>
+            </div>
+
+        </div>
+   
+
+
+
+
+
+</body>
+</html>
